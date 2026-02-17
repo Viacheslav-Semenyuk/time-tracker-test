@@ -38,3 +38,13 @@
 
 **Prompt 12**: "export csv файл не в формате csv"
 - **Result**: Improved CSV generation logic. Added escaping for special characters (commas, quotes) and UTF-8 BOM for better Microsoft Excel compatibility.
+
+**Prompt 13**: "сделай деплой на netlify"
+- **Result**: Successfully deployed the application to Netlify as a static export. Initial live URL: `https://time-tracker-test-viacheslav.netlify.app`.
+- **Action**: Enabled `output: 'export'` in `next.config.ts`, built the project, and used Netlify MCP tools for deployment.
+
+**Prompt 14**: "удали viacheslav в названии (Netlify)"
+- **Result**: Renamed the Netlify site. New URL: `https://time-tracker-test-arctic-web.netlify.app`.
+
+**Prompt 15**: "убедись, что README содержит описание и инструкции + проверь PROMPTS.md"
+- **Result**: Completely rewrote `README.md` with features, tech stack, and setup steps. Verified and synchronized `PROMPTS.md`.
