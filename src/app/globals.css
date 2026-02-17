@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdfdfd;
+  --foreground: #1c1c1c;
+  --card: #ffffff;
+  --accent: #5c7cfa; /* Soft Indigo */
+  --muted: #868e96;
+  --radius-soft: 24px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-accent: var(--accent);
+  --color-muted-text: var(--muted);
+  --radius-soft: var(--radius-soft);
+  
+  --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.soft-card {
+  background: var(--card);
+  border-radius: var(--radius-soft);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
